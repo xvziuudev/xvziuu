@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>O mnie | xvziuu.ovh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 
   <!-- AOS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Varela Round", sans-serif;
       background-color: rgb(48, 48, 48);
       padding: 0;
       margin: 0;
@@ -30,8 +33,15 @@
 
     .tekst-nav  {
       color: white;
-      text-decoration-color: rgb(54, 54, 228);
       padding: 10px;
+    }
+
+    .wylacz-dekoracje {
+      text-decoration: none;
+    }
+
+    .tekst-nav-obecna-strona {
+      text-decoration-color: rgb(54, 54, 228);
     }
 
     .nav {
@@ -46,34 +56,49 @@
     }
 
     .main {
-      margin-top: 350px;
+      margin-top: 15%;
       text-align: center;
     }
 
     .tekst-czesc {
-      font-size: 100px;
+      font-size: 75px;
       position: relative;
-      top: -280px;
+      font-weight: bold;
+      top: -10px;
     }
 
     .tekst-czesc2 {
-      background: -webkit-linear-gradient(#eee, #333);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      font-size: 100px;
+      font-size: 75px;
       position: relative;
-      top: -280px;
+      font-weight: bold;
+      top: -180px;
+    }
+
+    .tekst-czesc3 {
+      color: #5e5e5e;
+      position: relative;
+    }
+
+    .reszta-tekstu {
+      margin-top: 160px;
     }
   </style>
 </head>
 <body>
   <div class="nav" data-aos="fade-down">
-    <a class="tekst-nav" href="/">O mnie</a>
-    <a class="tekst-nav" href="kontakt">Kontakt</a>
-    <a class="tekst-nav" href="portfolio">Portfolio</a>
+    <a class="tekst-nav tekst-nav-obecna-strona" href="/">O mnie</a>
+    <a class="tekst-nav wylacz-dekoracje" href="kontakt">Kontakt</a>
+    <a class="tekst-nav wylacz-dekoracje" href="portfolio">Portfolio</a>
   </div>
   <div class="main">
-    <img src="xvziuu.png" width="400"><a class="tekst-czesc" style="color:white;">Cześć, jestem</a><a class="tekst-czesc2"> xvziuu</a>
+    <div class="main-czesc" data-aos="flip-left">
+      <img src="xvziuu.png" width="250">
+      <a class="tekst-czesc" style="color:white;margin-left:10px;">Cześć<br></a>
+    </div>
+      <div class="reszta-tekstu" data-aos="fade-up">
+        <a class="tekst-czesc2" style="color:white;"> jestem</a><a class="tekst-czesc2 tekst-czesc3"> xvziuu</a>
+  
+      </div>
   </div>
   <!-- AOS JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
